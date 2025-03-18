@@ -1,16 +1,22 @@
 // Autor: Victor Bitar Lima Benevides
-function sendEmail(event) {
-    event.preventDefault();
+const btn = document.getElementById('button');
 
-   
-    emailjs.sendForm('service_cazoexb', 'template_zugsl0l', event.target, 'MQAYddSuqwXuYLqC7')
-        .then((result) => {
-            console.log('Email enviado com sucesso:', result.text);
-            alert('Email enviado com sucesso!');
-        }, (error) => {
-            console.error('Erro ao enviar email:', error.text);
-            alert('Erro ao enviar email. Tente novamente mais tarde.');
-        });
-}
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-document.getElementById('contact-form').addEventListener('submit', sendEmail);
+   btn.value = 'Enviando...';
+
+   const serviceID = 'service_cazoexb';
+   const templateID = 'template_zugsl0l';
+
+   emailjs.sendForm(serviceID, templateID, form)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Enviado com sucesso!');
+      document.getElementById('form').reset();
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
