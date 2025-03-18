@@ -1,0 +1,126 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #263d68; 
+    color: #ffffff; 
+}
+header { 
+    background: #263d68; 
+    color: white; 
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold; 
+}
+section { 
+    padding: 20px;
+    text-align: center; 
+}
+
+.about img{
+    width: 150px;
+    height: auto;
+    border-radius: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.projects { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+.project-card { 
+    background: #263d68;
+    padding: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px; 
+}
+.project-card img { 
+    width: 100%; 
+    border-radius: 8px; 
+}
+.project-card:hover { 
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contacts {
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 20px; 
+}
+.contact-btn {
+    padding: 10px 15px; 
+    border: none; 
+    cursor: pointer;
+    border-radius: 5px;
+    background: #111324; 
+    color: white; 
+}
+.contact-btn:hover { 
+transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact-btn a { 
+    color: white; 
+    text-decoration: none; 
+}
+form{
+    padding-top: 25px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 20px; 
+    max-width: 360px;
+    margin: 0 auto;
+}
+form input, form textarea { 
+    padding: 15px; 
+    border: none; 
+    border-radius: 5px;
+    background: rgb(17, 19, 36);
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+form textarea { 
+    resize: none; 
+    height: 130px;
+}
+input[type="submit"] { 
+    background: rgb(17, 19, 36); 
+    color: white; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 15px; 
+    transition: 0.5s; 
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+input[type="submit"]:hover { 
+    background: #111324; 
+    transform: scale(1.05);
+    transition: 0.5s; 
+}
+
+.rodapé{
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff6b; ;
+}
+
+.rodapé a{
+    color: #ffffff6b;
+    text-decoration: none;
+}

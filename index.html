@@ -1,0 +1,74 @@
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Biar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./dadosIMG/me.icon-removebg-preview.png">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        Olá, sou Victor!
+    </header>
+    
+    <section class="about">
+        <h2>Sobre Mim</h2>
+        <img src="./dadosIMG/me.jpeg" alt="Minha Foto">
+        <p>Sou um aspirante a desenvolvedor apaixonado por tecnologia, criando soluções inovadoras e eficientes.</p>
+    </section>
+    
+    <section class="my-projects">
+        <h2>Meus Projetos</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Projeto 1</h3>
+                <a href="#"><img src="./dadosIMG/img.portifolio.png" alt="Projeto1"></a>
+                <p>Portifólio próprio feito do zero</p>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 2</h3>
+                <a href="#"><img src="./dadosIMG/img.portifolio.png" alt="Projeto2"></a>
+                <p>Portifólio próprio feito do zero</p>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 3</h3>
+                <a href="#"><img src="./dadosIMG/img.portifolio.png" alt="Projeto3"></a>
+                <p>Portifólio próprio feito do zero</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <h2>Contato</h2>
+        <div class="contacts">
+            <button class="contact-btn"><a target="_blank" href="https://w.app/vygwzj">WhatsApp</a></button>
+            <button class="contact-btn"><a target="_blank" href="https://github.com/bitar011">GitHub</a></button>
+        </div>
+        <form id="contact-form" action=""> 
+            <input type="text" name="user_name" placeholder="Nome" class="name" required>
+            <input type="email" name="user_email" placeholder="Email" required>
+            <input type="tel" name="user_phone" placeholder="Telefone">
+            <textarea name="message" placeholder="Mensagem"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section class="rodapé">
+        <footer>
+            <p>Desenvolvido por Victor Biar</p>
+            <p>2025</p>
+            <p>Entre em contato</p>
+            <p>Email: <a href="mailto:victorbitarr@gmail.com">victorbitarr@gmail.com</a></p>
+        </footer>
+
+    </section>
+<script src="script.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("MQAYddSuqwXuYLqC7");
+   })();
+</script>
+</body>
+</html>
