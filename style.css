@@ -6,10 +6,10 @@ html, body {
 
 body { 
     font-family: Arial, sans-serif;
-    margin: 0; padding: 0;
     background: #263d68; 
     color: #ffffff; 
 }
+
 header { 
     background: #263d68; 
     color: white; 
@@ -18,16 +18,17 @@ header {
     font-size: 24px;
     font-weight: bold; 
 }
+
 section { 
-    height: 100vh;
     padding: 20px;
     text-align: center; 
 }
 
-.about{
+.about {
     margin-top: 50px;
 }
-.about img{
+
+.about img {
     width: 250px;
     height: auto;
     border-radius: 40%;
@@ -40,19 +41,22 @@ section {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; 
+    margin-top: 50px;
 }
+
 .project-card { 
     background: #263d68;
     padding: 15px;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 350px; 
-    margin-top: 50px;
 }
+
 .project-card img { 
     width: 100%; 
     border-radius: 8px; 
 }
+
 .project-card:hover { 
     transform: scale(1.05);
     transition: 0.5s;
@@ -63,7 +67,9 @@ section {
     display: flex; 
     justify-content: center; 
     gap: 15px;  
+    margin-top: 50px;
 }
+
 .contact-btn {
     margin-top: 40px;
     padding: 10px 15px; 
@@ -73,16 +79,19 @@ section {
     background: #111324; 
     color: white; 
 }
+
 .contact-btn:hover { 
-transform: scale(1.05);
+    transform: scale(1.05);
     transition: 0.5s;
     cursor: pointer;
 }
+
 .contact-btn a { 
     color: white; 
     text-decoration: none; 
 }
-form{
+
+form {
     padding-top: 25px;
     display: flex; 
     flex-direction: column; 
@@ -91,6 +100,7 @@ form{
     max-width: 360px;
     margin: 0 auto;
 }
+
 form input, form textarea { 
     padding: 15px; 
     border: none; 
@@ -100,10 +110,12 @@ form input, form textarea {
     outline: none;
     font-size: 16px;
 }
+
 form textarea { 
     resize: none; 
     height: 130px;
 }
+
 input[type="submit"] { 
     background: rgb(17, 19, 36); 
     color: white; 
@@ -118,20 +130,78 @@ input[type="submit"] {
     margin: 0 auto;
     margin-top: 20px;
 }
+
 input[type="submit"]:hover { 
     background: #111324; 
     transform: scale(1.05);
     transition: 0.5s; 
 }
 
-.rodapé{
+.rodapé {
     padding-bottom: 50px;
     font-size: 12px;
     text-align: center;
-    color: #ffffff6b; ;
+    color: #ffffff6b;
 }
 
-.rodapé a{
+.rodapé a {
     color: #ffffff6b;
     text-decoration: none;
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .about img {
+        width: 200px;
+    }
+
+    .project-card {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+    }
 }
