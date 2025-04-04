@@ -43,6 +43,7 @@ section {
     gap: 20px;
     flex-wrap: wrap; 
     margin-top: 50px;
+    margin-bottom: 100px; /* Aumente o espaçamento entre projetos e a próxima seção */
 }
 
 .project-card { 
@@ -50,7 +51,9 @@ section {
     padding: 15px;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 350px; 
+    width: 100%; /* Ajuste para responsividade */
+    max-width: 350px; /* Limite máximo de largura */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
 }
 
 .project-card img { 
@@ -68,9 +71,11 @@ section {
     display: flex; 
     justify-content: center; 
     gap: 15px;  
-    margin-top: 50px;
+    margin-top: 50px; /* Espaçamento extra para evitar sobreposição */
 }
-
+.contact h2{
+    padding-top: 100px;
+}
 .contact-btn {
     margin-top: 40px;
     padding: 10px 15px; 
@@ -139,6 +144,7 @@ input[type="submit"]:hover {
 }
 
 .rodapé {
+    padding-top: 50px;
     padding-bottom: 50px;
     font-size: 12px;
     text-align: center;
